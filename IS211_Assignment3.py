@@ -57,6 +57,10 @@ def main(url):
         elif browser.upper().find("SAFARI") != -1:
             browser_count['SAFARI'] += 1
 
+
+            print('hour {} has {} hits'.format(timestamp.hour, image_counter)) #extra credit
+
+
         image_hits = (int(image_counter) / int(10000))
         percentage_hits = "{:.0%}".format(image_hits)
 
@@ -76,7 +80,7 @@ def main(url):
 
 
 
-        #print('{} has {} hits'.format(timestamp.hour, image_counter)) extra credit
+
 
 
 
