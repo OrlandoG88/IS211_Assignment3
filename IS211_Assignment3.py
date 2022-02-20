@@ -47,6 +47,7 @@ def main(url):
             image_counter += 1
 
 
+
         # count browsers
         if browser.upper().find("FIREFOX") != -1:
             browser_count['FIREFOX'] += 1
@@ -58,7 +59,6 @@ def main(url):
             browser_count['SAFARI'] += 1
 
 
-            print('hour {} has {} hits'.format(timestamp.hour, image_counter)) #extra credit
 
 
         image_hits = (int(image_counter) / int(10000))
@@ -80,7 +80,7 @@ def main(url):
 
 
 
-
+    #print('{} has {} hits'.format(timestamp, image_counter) #extra credit
 
 
 
@@ -93,6 +93,7 @@ if __name__ == "__main__":
     parser.add_argument("--url", help="URL to the datafile", type=str, required=True)
     args = parser.parse_args()
     main(args.url)
+
 
 
 
